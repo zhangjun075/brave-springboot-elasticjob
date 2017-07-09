@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: ms-esjob
+  aop:
+    proxy-target-class: true
+#Database Configuration
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3309/esjob
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: 123456
+      initialize: false
+      continue-on-error: true
+      aop-patterns: com.brave.jooq.service.*
+      WebStatFilter:
+        filters: stat
+management:
+  security:
+    enabled: false
+server:
+  port: 9001
+
+#jOOQ Configuration
+jooq:
+  sql:
+    dialect: MYSQL
+
+
+regCenter:
+  serverList: 192.168.1.6:2181
+  namespace: local
+
+simpleJob:
+  cron: 0/5 * * * * ?
+  shardingTotalCount: 3
+  shardingItemParameters: 0=beijing,1=shanghai,2=suzhou
+
+
+
+
+
+

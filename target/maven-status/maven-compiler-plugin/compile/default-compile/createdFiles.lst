@@ -1,0 +1,17 @@
+com/brave/repository/JobTestRepository.class
+org/jooq/util/repos/tables/records/TabJobTestRecord.class
+com/brave/config/SpringTransaction.class
+org/jooq/util/repos/Tables.class
+com/brave/Bootstrap.class
+com/brave/job/SpringSimpleJob.class
+org/jooq/util/repos/tables/TabJobTest.class
+com/brave/config/SpringTransactionProvider.class
+com/brave/config/SimpleJobConfig.class
+com/brave/exception/ExceptionTranslator.class
+org/jooq/util/repos/Esjob.class
+org/jooq/util/repos/Keys$Identities0.class
+com/brave/config/JobEventConfig.class
+com/brave/config/JooqSpringBootConfiguration.class
+org/jooq/util/repos/Keys$UniqueKeys0.class
+org/jooq/util/repos/Keys.class
+com/brave/service/JobTestService.class
